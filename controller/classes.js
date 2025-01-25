@@ -53,7 +53,7 @@ const updateClass = async (req, res) => {
     if (response.modifiedCount > 0){
         res.status(204).send();
     }else{
-        res.status(500).json(result.error || 'Error updating class' )
+        res.status(500).json(response.error || 'Error updating class' )
     }
 }
 const deleteClass = async (req, res) => {
@@ -62,7 +62,7 @@ const deleteClass = async (req, res) => {
     if(response.deleteCount > 0){
         res.status(204).send();
     }else{
-        res.status(500).json(result.error || 'Error deleting class')
+        res.status(500).json(response.error || 'Error deleting class')
     }
 }
 
