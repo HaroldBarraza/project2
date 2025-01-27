@@ -29,10 +29,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "firstName": {
                   "example": "any"
                 },
-                "lastname": {
+                "lastName": {
                   "example": "any"
                 },
                 "email": {
@@ -87,10 +87,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
+                "firstName": {
                   "example": "any"
                 },
-                "lastname": {
+                "lastName": {
                   "example": "any"
                 },
                 "email": {

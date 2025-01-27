@@ -9,18 +9,18 @@ GET http://localhost:8000/classes
 
 ### Get a user by Id
 
-GET http://localhost:8000/users/6794379aab67e45f10764e75
+GET http://localhost:8000/users/67943f5f69343ebd6fc03a28
 
 ### Get a class by Id
-GET http://localhost:8000/classes/67943839ab67e45f10764e76
+GET http://localhost:8000/classes/6792c13fd9f285531b715037
 
 ### Create a new user
 POST http://localhost:8000/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Mario",
-    "lastName" : "Luigi",
+    "firstName": "Luigi",
+    "lastName" : "Mario",
     "email" : "Marioe@example.com",
     "birthday" : "1990-01-01"
 
@@ -41,19 +41,20 @@ Content-Type: application/json
 }
 
 ### Update a user by Id
-PUT http://localhost:8000/users/679441f2f9df57d9bf60051d HTTP/1.1
+PUT http://localhost:8000/users/679456d68ef015110ba2c91b HTTP/1.1
 Content-Type: application/json
 
 {
     "firstName": "Mario",
     "lastName" : "Luigi",
     "email" : "example@example.com",
-    "birthday" : "1990-01-02"
+    "birthday" : "2000-01-02"
 }
 
 ### Update a class by Id
-PUT http://localhost:8000/classes/6792c13fd9f285531b715 HTTP/1.1
+PUT http://localhost:8000/classes/679456e28ef015110ba2c91c HTTP/1.1
 Content-Type: application/json
+
 {
     "name": "Advanced Math",
     "description": "A comprehensive course on advanced calculus and linear algebra.",
@@ -65,8 +66,8 @@ Content-Type: application/json
 }
 
 ### Delete a user by Id
-DELETE http://localhost:8000/users/679441f2f9df57d9bf60051d HTTP/1.1
+DELETE http://localhost:8000/users/679456d68ef015110ba2c91b HTTP/1.1
 
 
 ### Delete a class by Id
-DELETE http://localhost:8000/classes/679441f2f9df57d9bf60051d HTTP/1.1
+DELETE http://localhost:8000/classes/679456e28ef015110ba2c91c HTTP/1.1
