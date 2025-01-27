@@ -5,11 +5,10 @@
     "description": "API Documentation for the application",
     "version": "1.0.0"
   },
-  "host": "localhost:3001",
+  "host": "project2-9eim.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https",
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
