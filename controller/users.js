@@ -54,6 +54,7 @@ const createUser = [
 
 
 const updateUser = async (req, res) => {
+    console.log('Middleware de autenticación pasó');
     const userId = new ObjectId(req.params.id);
     const user = {
         firstName: req.body.firstName,

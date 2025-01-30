@@ -64,6 +64,9 @@ const createClass = [
         }
 ];
 const updateClass = async (req, res) => {
+    console.log('Middleware de autenticación pasó'); // Para depuración
+    console.log('User  session in createClass:', req.session.user);
+    console.log('Middleware de autenticación pasó');
     const classId = new ObjectId(req.params.id);
     const classData = {
         name : req.body.name,
